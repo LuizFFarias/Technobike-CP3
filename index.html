@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checpoint 3</title>
+    <title>Checkpoint 3</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./Js/cp3.js" defer></script>
 </head>
 <body>
-    <form action="index.html" method="get" onsubmit="return false">
+    
+    <div id="msg"></div>
+
+    <form action="index.html" method="get" onsubmit="return true" name="formulario">
         <fieldset>
             <legend>Entrar</legend>
+            <div>
+                <label for="idNome">Nome</label>
+                <input type="text" name="txtNome" id="idNome" placeholder="Nome">
+            </div>
+            <div>
+                <label for="idSegNome">Segundo Nome</label>
+                <input type="text" name="txtSegNome" id="idSegNome" placeholder="Segundo Nome">
+            </div>
             <div>
                 <label for="idEmail">Email</label>
                 <input type="email" name="txtEmail" id="idEmail" placeholder="Email">
@@ -27,6 +40,5 @@
             </div>
         </fieldset>
     </form>
-
 </body>
 </html>
