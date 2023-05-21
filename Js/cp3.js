@@ -3,7 +3,7 @@ const inputSegNome = document.forms["formulario"]["txtSegNome"].value;
 const inputEmail = document.forms["formulario"]["txtEmail"].value;
 const inputSenha = document.forms["formulario"]["txtSenha"].value;
 const inputConfirmSenha = document.forms["formulario"]["txtConfirmSenha"].value;
-const entrada = document.forms["entrada"];
+const entrada = document.forms["Entrada"];
 
 btnEntrar.addEventListener("")
 if(inputEmail.length <= 5){
