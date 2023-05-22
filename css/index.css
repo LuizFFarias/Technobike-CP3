@@ -47,13 +47,18 @@ body {
       background-color: #45a049;
 
     }
-        #msg {
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: #f8f8f8;
-            border: 1px solid #e0e0e0;
-            border-radius: 3px;
-          }
+    #msg {
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #f8f8f8;
+        border: 1px solid #e0e0e0;
+        border-radius: 3px;
+        }
+
+    body.dark-mode {
+        color: #fff;
+        background-color: #333;
+        }
     
 
   
