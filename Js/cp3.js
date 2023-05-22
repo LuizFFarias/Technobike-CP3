@@ -10,18 +10,18 @@ btnEntrar.addEventListener("click", function(event) {
     const inputSenha = document.forms["formulario"]["txtPass"].value;
     const inputConfirmSenha = document.forms["formulario"]["txtConfirmPass"].value;
 
-if(inputEmail.length <= 5){
-    alert("O email tem que ter no mínimo 5 caracteres!")
-    return;
-}
-
 if(inputNome.length <= 5){
     alert("O nome tem que ter no mínimo 5 caracteres!")
     return;
 }
-
+    
 if(inputSegNome.length <= 5){
     alert("O segundo nome tem que ter no mínimo 5 caracteres!")
+    return;
+}
+
+if(inputEmail.length <= 5){
+    alert("O e-mail tem que ter no mínimo 5 caracteres!")
     return;
 }
 
