@@ -44,3 +44,8 @@ const body = document.body;
 btnDarkModeToggle.addEventListener("click", function() {
     body.classList.toggle("dark-mode");
 });
+
+window.addEventListener("load", function() {
+    alert("A página foi carregada!");
+});
+
