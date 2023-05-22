@@ -4,6 +4,5 @@ Igor Ribeiro Anccilotto, 550415
 Luiz Fillipe Farias, 00519
 Rafaella Monique do Carmo Bastos, 552425
 
-URL do repositório:
+URL do repositório: https://github.com/LuizFFarias/Technobike-CP3.git
 
-URL do GitPages:
