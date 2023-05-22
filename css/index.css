@@ -23,7 +23,7 @@ body {
   form {
     margin-top: 20px;
   }
-  
+
     input[type="text"],
     input[type="email"],
     input[type="password"] {
@@ -45,7 +45,15 @@ body {
     
     button[type="submit"]:hover {
       background-color: #45a049;
+
     }
+        #msg {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f8f8f8;
+            border: 1px solid #e0e0e0;
+            border-radius: 3px;
+          }
     
 
   
