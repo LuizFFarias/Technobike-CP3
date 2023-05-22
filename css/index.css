@@ -76,6 +76,20 @@ body {
         border: 1px solid #000;
 
     }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  input[type='text'],input[type='email'],input[type='password'] {
+  
+  }
+  
+  button[type='submit'] {
+      
+  }
     
 
   
