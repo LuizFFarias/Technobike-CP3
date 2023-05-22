@@ -37,3 +37,10 @@ btnEntrar.addEventListener("click", function(event) {
 
     entrada.submit();
 });
+
+const btnDarkModeToggle = document.getElementById("btnDarkModeToggle");
+const body = document.body;
+
+btnDarkModeToggle.addEventListener("click", function() {
+    body.classList.toggle("dark-mode");
+});
