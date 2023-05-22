@@ -10,35 +10,36 @@
 </head>
 <body>
     
-    <div id="msg"></div>
+    <section id="msg"></section>
 
-    <form action="index.html" method="get" onsubmit="return true" name="formulario">
+    <form action="index.html" method="get" name="formulario">
         <fieldset>
             <legend>Entrar</legend>
             <div>
                 <label for="idNome">Nome</label>
-                <input type="text" name="txtNome" id="idNome" placeholder="Nome">
+                <input type="text" name="txtNome" id="idNome" placeholder="Nome" aria-label="Nome">
             </div>
             <div>
                 <label for="idSegNome">Segundo Nome</label>
-                <input type="text" name="txtSegNome" id="idSegNome" placeholder="Segundo Nome">
+                <input type="text" name="txtSegNome" id="idSegNome" placeholder="Segundo Nome" aria-label="Segundo Nome">
             </div>
             <div>
                 <label for="idEmail">Email</label>
-                <input type="email" name="txtEmail" id="idEmail" placeholder="Email">
+                <input type="email" name="txtEmail" id="idEmail" placeholder="Email" aria-label="Email">
             </div>
             <div>
                 <label for="idPass">Senha</label>
-                <input type="password" name="txtPass" id="idPass" placeholder="Senha">
+                <input type="password" name="txtPass" id="idPass" placeholder="Senha" aria-label="Senha">
             </div>
             <div>
                 <label for="idConfirmPass">Confirmar Senha</label>
-                <input type="password" name="txtConfirmPass" id="idConfirmPass" placeholder="Confirma Senha">
+                <input type="password" name="txtConfirmPass" id="idConfirmPass" placeholder="Confirma Senha" aria-label="Confirmar Senha">
             </div>
             <div>
                 <button type="submit" id="btnSubmit">Entrar</button>
             </div>
         </fieldset>
     </form>
+        <button id="btnDarkModeToggle">Ativar Dark Mode</button>
 </body>
 </html>

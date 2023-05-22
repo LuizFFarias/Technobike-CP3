@@ -1,27 +1,52 @@
-const inputNome = document.querySelector("#idNome");
-const inputSegNome = document.forms["formulario"]["txtSegNome"].value;
-const inputEmail = document.forms["formulario"]["txtEmail"].value;
-const inputSenha = document.forms["formulario"]["txtSenha"].value;
-const inputConfirmSenha = document.forms["formulario"]["txtConfirmSenha"].value;
-const entrada = document.forms["entrada"];
+const entrada = document.forms["formulario"];
+const btnEntrar = document.getElementById("btnSubmit");
 
-btnEntrar.addEventListener("")
-if(inputEmail.length <= 5){
-    alert("O email tem que ter no mínimo 5 caracteres!")
-}
+btnEntrar.addEventListener("click", function(event) {
+    event.preventDefault();
 
-if(inputNome.length <= 5){
-    alert("O nome tem que ter no mínimo 5 caracteres!")
-}
+    const inputNome = entrada.elements["#idNome"].value;
+    const inputSegNome = entrada.elements["txtSegNome"].value;
+    const inputEmail = entrada.elements["txtEmail"].value;
+    const inputSenha = entrada.elements["txtPass"].value;
+    const inputConfirmSenha = entrada.elements["txtConfirmPass"].value;
 
-if(inputSegNome.length <= 5){
-    alert("O segundo nome tem que ter no mínimo 5 caracteres!")
-}
+    if (inputEmail.length < 5) {
+        alert("O e-mail deve ter no mínimo 5 caracteres!");
+        return;
+    }
 
-if(inputSenha.length <= 6 || inputSenha >= 8 ){
-    alert("A tem que ter no mínimo 5 caracteres e no máximo 8 caracteres!")
-}
+    if (inputNome.length < 5) {
+        alert("O nome deve ter no mínimo 5 caracteres!");
+        return;
+    }
 
-if(inputConfirmSenha.length <= 5 || inputConfirmSenha >= 8){
-    alert("O email tem que ter no mínimo 5 caracteres e no máximo 8 caracters!")
-}
+    if (inputSegNome.length < 5) {
+        alert("O segundo nome deve ter no mínimo 5 caracteres!");
+        return;
+    }
+
+    if (inputSenha.length < 6 || inputSenha.length > 8) {
+        alert("A senha deve ter entre 6 e 8 caracteres!");
+        return;
+    }
+
+    if (inputSenha !== inputConfirmSenha) {
+        alert("As senhas não coincidem!");
+        return;
+    }
+
+    entrada.submit();
+});
+
+const btnDarkModeToggle = document.getElementById("btnDarkModeToggle");
+const body = document.body;
+
+btnDarkModeToggle.addEventListener("click", function() {
+    body.classList.toggle("dark-mode");
+});
+
+window.addEventListener("load", function() {
+    alert("A página foi carregada!");
+});
+
+
